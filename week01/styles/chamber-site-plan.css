@@ -1,0 +1,54 @@
+/* Reset some default styles to start with a clean slate */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color to the entire body */
+body {
+  background-color: #2e5d3b; /* Earthy Green */
+  font-family: "Nunito", sans-serif; /* Change the font to Nunito */
+  color: #3e2115; /* Rich Red */
+  line-height: 1.6;
+}
+
+/* Style the header */
+header {
+  background-color: #67c240; /* Electric Green */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Style the main sections */
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style article headers and paragraphs */
+article h3 {
+  color: #3e2115; /* Rich Red */
+}
+
+/* Style the footer */
+footer {
+  background-color: #67c240; /* Electric Green */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Style links */
+a {
+  color: #67c240; /* Electric Green */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
