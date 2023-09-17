@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assan Chembe - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal by Assan Chembe. Learn web development with interactive activities and information.">
+    <meta name="author" content="Assan Chembe">
+    <link rel="stylesheet" href="sytles/base.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="sytles/larger.css" media="screen and (min-width: 768px)">
+
+</head>
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="Assan Chembe's Profile Image">
+        <h1>Assan Chembe</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index">Home</a></li>
+            <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
+            <li><a href="site.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+              <li><a href="#">Week 01: Setup, Review, and Media Queries</a></li>
+              <li><a href="#">Week 02: Responsive Design </a></li>
+              <li><a href="#">Week 03: Responsive Images </a></li>
+              <li><a href="#">Week 04: HTML Tables and Forms </a></li>
+              <li><a href="#">Week 05: JSON and APi services </a></li>
+              <li><a href="#">Week 06: Putting all together </a></li>
+              <li><a href="#">Week 07: Final project </a></li>
+            </ul>
+        </section>
+        
+        <section class="card">
+            <h3>Information</h3>
+            <p>Weather: [Weather Placeholder]</p>
+            <p>Number of Visits: [Visits Placeholder]</p>
+        </section>
+    </main>
+    
+   <footer>
+        <p>&copy; <span id="currentYear"></span> Assan Chembe</p>
+        <p id="lastModified"></p>
+        <p>Your State or Country <img src="images/flag.jpg" alt="Flag" > (Flag optional)</p>
+    </footer> 
+
+    <!-- JavaScript to populate dynamic content -->
+    <script>
+        // Get the current year and populate it
+        const currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').textContent = currentYear;
+
+        // Populate lastModified with JavaScript (replace with actual date)
+        document.getElementById('lastModified').textContent = "Last Modified: 13th September 2023";
+        src="scripts/getDates.js"
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Add this to include padding and borders in element sizing */
+}
+
+body {
+  font-family: 'Your-Selected-Font', sans-serif;
+  background: linear-gradient(135deg, #007BFF, #FF6B35, #4CAF50); /* Gradient background with blue, burnt orange, and green */
+  color: #fff; /* Text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center the content vertically */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  border-radius: 10px; /* Rounded corners */
+  backdrop-filter: blur(10px); /* Add a blur effect to the background */
+}
+
+header img {
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* Display links vertically */
+}
+
+nav li {
+  margin-bottom: 10px; /* Add spacing between links */
+}
+
+main {
+  max-width: 800px; /* Adjust the max-width based on your design */
+  padding: 20px;
+  width: 100%;
+}
+
+.card {
+  background-color: #fff; /* Card background color */
+  padding: 20px;
+  margin-bottom: 20px; /* Add spacing between cards */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow to cards */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: #fff; /* Text color */
+  width: 100%;
+}
+
+/* Add additional styles as needed */
