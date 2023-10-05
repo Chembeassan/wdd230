@@ -8,14 +8,17 @@
     <meta name="author" content="Assan Chembe">
     <link rel="stylesheet" href="sytles/base.css">
     <link rel="stylesheet" href="sytles/larger.css">
-
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Assan Chembe's Profile Image">
-        <h1>Assan Chembe</h1>
-    
+        <div class="header-left">
+            <img src="images/profile.jpg" alt="Assan Chembe's Profile Image">
+        </div>
+        <div class="header-right">
+            <h1>Assan Chembe</h1>
+        </div>
     </header>
+    
     <nav>
         <ul>
             <li><a href="index">Home</a></li>
@@ -25,45 +28,45 @@
             <li><a href="form.html">Form</a></li>
         </ul>
     </nav>
-    
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
-        
         <section class="card">
             <h3>Learning Activities</h3>
             <ul>
-              <li><a href="#">Week 01: Setup, Review, and Media Queries</a></li>
-              <li><a href="#">Week 02: Responsive Design </a></li>
-              <li><a href="#">Week 03: Responsive Images </a></li>
-              <li><a href="#">Week 04: HTML Tables and Forms </a></li>
-              <li><a href="#">Week 05: JSON and APi services </a></li>
-              <li><a href="#">Week 06: Putting all together </a></li>
-              <li><a href="#">Week 07: Final project </a></li>
+                <li><a href="#">Week 01: Setup, Review, and Media Queries</a></li>
+                <li><a href="#">Week 02: Responsive Design</a></li>
+                <li><a href="#">Week 03: Responsive Images</a></li>
+                <li><a href="#">Week 04: HTML Tables and Forms</a></li>
+                <li><a href="#">Week 05: JSON and API services</a></li>
+                <li><a href="#">Week 06: Putting all together</a></li>
+                <li><a href="#">Week 07: Final project</a></li>
             </ul>
         </section>
-        
         <section class="card">
             <h3>Information</h3>
             <p>Weather: [Weather Placeholder]</p>
             <p>Number of Visits: [Visits Placeholder]</p>
         </section>
     </main>
-    
-   <footer>
+    <!-- Hero Image using a <picture> element with srcset -->
+    <section>
+        <picture>
+            <img src="images/temple.webp" media="(max-width: 400px)">
+            <source srcset="images/temple-large.webp" media="(max-width: 960px)">
+            <img src="images/church.webp" alt="Favorite Temple Image">
+        </picture>
+        <!-- Overlay for the temple image -->
+        <div class="overlay">
+            <div class="overlay-text">[My tempel name place holder]</div>
+        </div>
+    </section>
+    <!-- Google Map iframe -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2dLongitude!3dLatitude!4d0.0000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDIzJzIwLjAiUyAxMDPCsDUzJzI4LjYiRQ!5e0!3m2!1sen!2sus!4v1609457890321!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <footer>
         <p>&copy; <span id="currentYear"></span> Assan Chembe</p>
-        <p id="lastModified"></p>
-        <p>Your State or Country <img src="images/flag.jpg" alt="Flag" > (Flag optional)</p>
-    </footer> 
-
-    <!-- JavaScript to populate dynamic content -->
-    <script>
-        // Get the current year and populate it
-        const currentYear = new Date().getFullYear();
-        document.getElementById('currentYear').textContent = currentYear;
-
-        // Populate lastModified with JavaScript (replace with actual date)
-        document.getElementById('lastModified').textContent = "Last Modified: 13th September 2023";
-        src="scripts/getDates.js"
-    </script>
+        <p>Your State or Country <img src="images/flag.jpg" alt="Flag"> (Flag optional)</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>
