@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilongwe Chamber of Commerce</title>
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Lilongwe Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://Lilongwe-Chamber-of-Commerce.com/thumbnail.jpg">
+    <meta property="og:url" content="Lilongwe-Chamber-of-Commerce/index.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <!-- Social media icons -->
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+        </div>
+        <nav>
+          <button id="menu"></button>
+          <ul class="navigation">
+            
+            
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            
+          </ul>
+        </nav>
+        <h1>Welcome to Lilongwe Chamber of Commerce</h1>
+    </header>
+    <main class="join-main">
+      <h1>Join Our Chamber</h1>
+      <p>Complete the form below to become a member:</p>
+      <form action="thankyou.html" method="get">
+        <label for="applicantFirstName">Applicant's First Name</label>
+        <input type="text" required name="applicantFirstName" id="applicantFirstName">
+    
+        <label for="applicantLastName">Applicant's Last Name</label>
+        <input type="text" required name="applicantLastName" id="applicantLastName">
+    
+        <label for="applicantTitle">Applicant's Title or Position</label>
+        <input type="text" name="applicantTitle" id="applicantTitle" pattern="[A-Za-z -]{7,}">
+    
+        <label for="applicantEmail">Email Address</label>
+        <input type="email" required name="applicantEmail" id="applicantEmail" placeholder="example@example.com">
+    
+        <label for="applicantPhone">Mobile Phone Number</label>
+        <input type="tel" required name="applicantPhone" id="applicantPhone">
+    
+        <label for="organizationName">Business/Organization Name</label>
+        <input type="text" required name="organizationName" id="organizationName">
+    
+        <label for="membershipLevel">Membership Level</label>
+        <select id="membershipLevel" name="membershipLevel">
+          <option value="basic">Basic Membership</option>
+          <option value="standard">Standard Membership</option>
+          <option value="premium">Premium Membership</option>
+          <option value="vip">VIP Membership</option>
+        </select>
+    
+        <label for="organizationDescription">Business/Organization Description</label>
+        <textarea name="organizationDescription" id="organizationDescription"></textarea>
+    
+        <input type="hidden" name="timestamp" id="timestamp" value="Use JavaScript to set the current date and time">
+    
+        <input type="submit" value="Submit">
+      </form>
+    </main>
+    
+    <footer>
+        <div class="footer">
+        <section>
+            <h3>Contact Information</h3>
+            <p>Email: contact@lilongwechamber.com</p>
+            <p>Phone: +265 999 757 087</p>
+        </section>
+        <section>
+            <h3>Footer Information</h3>
+            <p>&copy; 2023 Lilongwe Chamber of Commerce</p>
+            <p>Created by Assan Chembe</p>
+            <p>WDD 230 Project</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </section>
+    </div>
+    </footer>
+    <script src="scripts/chamber.js">
+      
+    </script>
+</body>
+</html>

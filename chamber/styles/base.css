@@ -359,6 +359,109 @@ nav {
   margin-bottom: 20px;
 }
 
+/* Style for join.html */
+.join-main {
+  max-width: 800px;
+  padding: 20px;
+  width: 100%;
+  background: #fff; /* White background */
+  border: 1px solid hsl(0, 0%, 87%); /* Gray border */
+  border-radius: 5px;
+  color: #000;
+}
+
+.join-main h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center; /* Center the heading */
+}
+
+.join-main p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center; /* Center the paragraph text */
+}
+
+.join-main form {
+  margin-top: 20px;
+  text-align: left; /* Align form elements to the left */
+}
+
+.join-main label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.join-main input[type="text"],
+.join-main input[type="email"],
+.join-main input[type="tel"],
+.join-main select,
+.join-main textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.join-main select {
+  appearance: none; /* Remove default select styles */
+}
+
+.join-main input[type="submit"] {
+  background-color: #4CAF50; /* Green background for submit button */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Style for thankyou.html */
+.thank-you-main {
+  max-width: 800px;
+  padding: 20px;
+  width: 100%;
+  background: #fff; /* White background */
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 5px;
+}
+
+.thank-you-main h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.thank-you-main p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.thank-you-main ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.thank-you-main li {
+  list-style: disc;
+}
+
+.thank-you-main a {
+  color: #007BFF; /* Blue link color */
+  text-decoration: underline;
+}
+
+/* Style the "thank you" content within the main section */
+.thank-you-content {
+  padding: 20px;
+}
+
+
+
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
