@@ -471,6 +471,7 @@ nav {
   margin: 20px;
 }
 
+
 /* Style for member cards */
 .member-card {
   width: calc(50% - 20px);/* Adjust width based on desired number of members per row */
