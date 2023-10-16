@@ -448,6 +448,7 @@ nav {
 
 .thank-you-main li {
   list-style: disc;
+  color: #000;
 }
 
 .thank-you-main a {
@@ -460,6 +461,42 @@ nav {
   padding: 20px;
 }
 
+/* main-content.css */
+
+/* Style for the main content */
+#members-container {
+  display:flex;
+  flex-wrap : wrap ;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+/* Style for member cards */
+.member-card {
+  width: calc(50% - 20px);/* Adjust width based on desired number of members per row */
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #000;
+}
+
+.member-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.member-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.member-card p {
+  font-size: 14px;
+  margin-top: 5px;
+}
 
 
 

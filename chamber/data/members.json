@@ -1,0 +1,41 @@
+{
+  "members": [
+    {
+      "name": "Company 1",
+      "address": "123 Main St, City, State",
+      "phone": "123-456-7890",
+      "website": "https://www.company1.com",
+      "image": "company1.jpg",
+      "membershipLevel": "Gold",
+      "otherInfo": "Additional information about Company 1"
+    },
+    {
+      "name": "Company 2",
+      "address": "456 Elm St, City, State",
+      "phone": "987-654-3210",
+      "website": "https://www.company2.com",
+      "image": "company2.jpg",
+      "membershipLevel": "Silver",
+      "otherInfo": "Additional information about Company 2"
+    },
+    {
+      "name": "Company 3",
+      "address": "789 Oak St, City, State",
+      "phone": "555-123-4567",
+      "website": "https://www.company3.com",
+      "image": "company3.jpg",
+      "membershipLevel": "Bronze",
+      "otherInfo": "Additional information about Company 3"
+    },
+    {
+      "name": "Company 4",
+      "address": "321 Pine St, City, State",
+      "phone": "777-888-9999",
+      "website": "https://www.company4.com",
+      "image": "company4.jpg",
+      "membershipLevel": "Silver",
+      "otherInfo": "Additional information about Company 4"
+    }
+    
+  ]
+}

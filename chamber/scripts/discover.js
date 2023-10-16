@@ -1,4 +1,3 @@
-
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -31,49 +30,16 @@ if (!localStorage.getItem("lastVisit")) {
 
 // Store the current date in localStorage
 localStorage.setItem("lastVisit", Date.now().toString());
+
+
 // Function to get the current date in the format "DD Month YYYY"
 function getCurrentDate() {
   var options = { year: 'numeric', month: 'long', day: 'numeric' };
   return new Date().toLocaleDateString(undefined, options);
 }
 
-// Find the span element with the id "lastModified" within the footer
+// Find the span element with the id "lastModified"
 var lastModifiedSpan = document.getElementById("lastModified");
 
 // Update the content of the span element with the current date
 lastModifiedSpan.textContent = getCurrentDate();
-
-
-// Function to fetch and display member data
-function displayMembers(gridView) {
-  fetch('data/members.json') // Relative path to the JSON file
-    .then((response) => response.json())
-    .then((jsonData) => {
-      const membersContainer = document.getElementById('members-container');
-      membersContainer.innerHTML = ''; // Clear previous data
-
-      jsonData.members.forEach((member) => {
-        const memberCard = document.createElement('div');
-        memberCard.className = gridView ? 'member-card grid' : 'member-card list';
-
-        // Populate memberCard with data from JSON
-        memberCard.innerHTML = `
-          <img src="images/${member.image}" alt="${member.name}">
-          <h2>${member.name}</h2>
-          <p>Address: ${member.address}</p>
-          <p>Phone: ${member.phone}</p>
-          <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
-          <p>Membership Level: ${member.membershipLevel}</p>
-          <p>Additional Information: ${member.otherInfo}</p>
-        `;
-
-        membersContainer.appendChild(memberCard);
-      });
-    })
-    .catch((error) => {
-      console.error('Error fetching data:', error);
-    });
-}
-
-// Call the function with grid view as default
-displayMembers(true);

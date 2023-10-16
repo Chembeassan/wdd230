@@ -12,6 +12,7 @@
     <meta property="og:image" content="http://Lilongwe-Chamber-of-Commerce.com/thumbnail.jpg">
     <meta property="og:url" content="Lilongwe-Chamber-of-Commerce/index.html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 
 </head>
 <body>
@@ -37,45 +38,54 @@
         </nav>
         <h1>Welcome to Lilongwe Chamber of Commerce</h1>
     </header>
-    <main class="join-main">
-      <h1>Join Our Chamber</h1>
-      <p>Complete the form below to become a member:</p>
-      <form action="thankyou.html" method="get">
-        <label for="applicantFirstName">Applicant's First Name</label>
-        <input type="text" required name="applicantFirstName" id="applicantFirstName">
+    <main>
+      <div id="members-container">
+        <!-- Member 1 -->
+        <div class="member-card">
+            <img src="images/amary.jpg" alt="Company 1">
+            <h2>Company 1</h2>
+            <p>Address: 123 Main St, City, State</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Website: <a href="https://www.company1.com">www.company1.com</a></p>
+            <p>Membership Level: Gold</p>
+            <p>Additional Information: Additional information about Company 1</p>
+        </div>
     
-        <label for="applicantLastName">Applicant's Last Name</label>
-        <input type="text" required name="applicantLastName" id="applicantLastName">
+        <!-- Member 2 -->
+        <div class="member-card">
+            <img src="images/bicc-night.jpg" alt="Company 2">
+            <h2>Company 2</h2>
+            <p>Address: 456 Elm St, City, State</p>
+            <p>Phone: 987-654-3210</p>
+            <p>Website: <a href="https://www.company2.com">www.company2.com</a></p>
+            <p>Membership Level: Silver</p>
+            <p>Additional Information: Additional information about Company 2</p>
+        </div>
     
-        <label for="applicantTitle">Applicant's Title or Position</label>
-        <input type="text" name="applicantTitle" id="applicantTitle" pattern="[A-Za-z -]{7,}">
+        <!-- Member 3 -->
+        <div class="member-card">
+            <img src="images/bns.jpg" alt="Company 3">
+            <h2>Company 3</h2>
+            <p>Address: 789 Oak St, City, State</p>
+            <p>Phone: 555-123-4567</p>
+            <p>Website: <a href="https://www.company3.com">www.company3.com</a></p>
+            <p>Membership Level: Bronze</p>
+            <p>Additional Information: Additional information about Company 3</p>
+        </div>
     
-        <label for="applicantEmail">Email Address</label>
-        <input type="email" required name="applicantEmail" id="applicantEmail" placeholder="example@example.com">
+        <!-- Member 4 -->
+        <div class="member-card">
+            <img src="images/kang'ombe.jpg" alt="Company 4">
+            <h2>Company 4</h2>
+            <p>Address: 321 Pine St, City, State</p>
+            <p>Phone: 777-888-9999</p>
+            <p>Website: <a href="https://www.company4.com">www.company4.com</a></p>
+            <p>Membership Level: Silver</p>
+            <p>Additional Information: Additional information about Company 4</p>
+        </div>
+    </div>
     
-        <label for="applicantPhone">Mobile Phone Number</label>
-        <input type="tel" required name="applicantPhone" id="applicantPhone">
-    
-        <label for="organizationName">Business/Organization Name</label>
-        <input type="text" required name="organizationName" id="organizationName">
-    
-        <label for="membershipLevel">Membership Level</label>
-        <select id="membershipLevel" name="membershipLevel">
-          <option value="basic">Basic Membership</option>
-          <option value="standard">Standard Membership</option>
-          <option value="premium">Premium Membership</option>
-          <option value="vip">VIP Membership</option>
-        </select>
-    
-        <label for="organizationDescription">Business/Organization Description</label>
-        <textarea name="organizationDescription" id="organizationDescription"></textarea>
-    
-        <input type="hidden" name="timestamp" id="timestamp" value="Use JavaScript to set the current date and time">
-    
-        <input type="submit" value="Submit">
-      </form>
-    </main>
-    
+  </main>
     <footer>
         <div class="footer">
         <section>
@@ -89,9 +99,9 @@
             <p>Created by Assan Chembe</p>
             <p>WDD 230 Project</p>
             <p>Last Modified: <span id="lastModified"></span></p>
-            
         </section>
     </div>
+    
     </footer>
     <script src="scripts/chamber.js"></script>
 </body>
