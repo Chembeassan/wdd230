@@ -404,6 +404,13 @@ nav {
   border-radius: 5px;
   font-size: 14px;
 }
+/* Add this CSS to your styles/larger.css file */
+
+.join-main {
+  max-width: 900px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the form on the page */
+}
+
 
 .join-main select {
   appearance: none; /* Remove default select styles */
@@ -499,6 +506,20 @@ nav {
   margin-top: 5px;
 }
 
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  flex: 1; /* Adjust flex properties as needed */
+}
+
+.main-content {
+  flex: 2; /* Adjust flex properties as needed */
+}
+
+
 
 
 /* Media query for smaller screens */
@@ -508,5 +529,9 @@ nav {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  .grid-container {
+    flex-direction: column;
   }
 }
