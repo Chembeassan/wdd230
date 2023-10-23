@@ -2,57 +2,70 @@
 body, h1, h2, h3, p {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
-  
+  box-sizing: border-box;
 }
 
+/* General Styles */
 body {
   font-family: 'Your-Selected-Font', sans-serif;
-  background: linear-gradient(135deg, #007BFF, #FF6B35, #4CAF50); /* Gradient background with blue, burnt orange, and green */
-  color: #fff; /* Text color */
+  background: linear-gradient(135deg, #007BFF, #FF6B35, #4CAF50);
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Center the content vertically */
+  height: 100vh;
 }
 
+/* Header Styles */
 header {
   text-align: center;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
-  border-radius: 10px; /* Rounded corners */
-  backdrop-filter: blur(10px); /* Add a blur effect to the background */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
 }
 
 header img {
   height: auto;
+  width: 100%;
 }
 
-nav ul {
+/* Navigation Styles */
+nav ul.menu {
   list-style: none;
   display: flex;
-  flex-direction: column; /* Display links vertically */
+  padding-left: 20px;
 }
 
-nav li {
-  margin-bottom: 10px; /* Add spacing between links */
+nav ul.menu li {
+  margin-right: 20px; /* Add margin to the right of each menu item */
 }
 
+nav ul.menu li {
+  margin-bottom: 20px; /* Adjust the margin as needed for the desired spacing */
+}
+
+nav ul.menu a {
+  text-decoration: none;
+}
+
+/* Main Content Styles */
 main {
-  max-width: 800px; /* Adjust the max-width based on your design */
+  max-width: 800px;
   padding: 20px;
   width: 100%;
 }
 
+/* Card Styles */
 .card {
-  background-color: #fff; /* Card background color */
+  background-color: #fff;
   padding: 20px;
-  margin-bottom: 20px; /* Add spacing between cards */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow to cards */
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Apply styles to the entire form */
+/* Form Styles */
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -63,18 +76,19 @@ form {
   text-align: center;
 }
 
-/* Apply styles to labels */
+/* Label Styles */
 label {
   display: block;
   margin: 10px 0;
   font-weight: bold;
-  color: #000; 
+  color: #000;
 }
 
-/* Apply styles to text inputs */
+/* Input Styles */
 input[type="text"],
 input[type="password"],
-input[type="email"] {
+input[type="email"],
+input[type="range"] {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
@@ -83,18 +97,13 @@ input[type="email"] {
   font-size: 16px;
 }
 
-/* Apply styles to range input */
-input[type="range"] {
-  width: 100%;
-}
-
-/* Apply styles to the range value output */
+/* Output Styles */
 output {
   display: block;
   font-weight: bold;
 }
 
-/* Apply styles to the submit button */
+/* Submit Button Styles */
 button[type="submit"] {
   background: #007BFF;
   color: #fff;
@@ -105,17 +114,16 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-/* Change the button color on hover */
 button[type="submit"]:hover {
   background: #0056b3;
 }
 
-/* Add additional styles for invalid inputs */
+/* Invalid Input Styles */
 input:invalid {
   border-color: #ff0000;
 }
 
-/* Style the output message for the password confirmation */
+/* Password Confirmation Message Styles */
 #confirmPassword:invalid + label::after {
   content: " - Passwords do not match";
   color: #ff0000;
@@ -123,6 +131,7 @@ input:invalid {
   margin-top: 5px;
 }
 
+/* Other Styles */
 .confirmation-box {
   color: #000;
   background: #fff;
@@ -138,7 +147,6 @@ input:invalid {
   font-size: 40px;
   margin: 10px auto;
 }
-
 
 .message {
   text-align: center;
@@ -163,11 +171,11 @@ input:invalid {
   background: #0056b3;
 }
 
+/* Footer Styles */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-  color: #fff; /* Text color */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
   width: 100%;
 }
-

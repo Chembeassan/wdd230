@@ -20,8 +20,9 @@
         </div>
     </header>
     
+    
     <nav>
-        <ul>
+        <ul class="menu">
             <li><a href="index">Home</a></li>
             <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="chamber/index.html">Chamber</a></li>
@@ -43,11 +44,12 @@
                 <li><a href="#">Week 07: Final project</a></li>
             </ul>
         </section>
-        <section class="card">
-            <h3>Information</h3>
-            <p>Weather: [Weather Placeholder]</p>
-            <p>Number of Visits: [Visits Placeholder]</p>
+        <section class="weather-card">
+            <h2>Weather Forecast</h2>
+            <p>Today's Weather: ${description}</p>
+            <p>Temperature: ${currentTemp}°C</p>
         </section>
+        
     </main>
     <!-- Hero Image using a <picture> element with srcset -->
     <section>
@@ -79,5 +81,6 @@
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 </html>
