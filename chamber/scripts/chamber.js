@@ -8,31 +8,91 @@ function fetchWeatherData(city, apiKey) {
     .then(response => response.json());
 }
 
-// Function to display the last modified date
-function displayLastModifiedDate() {
-  const lastModifiedElement = document.getElementById("lastModified");
-  const lastModified = new Date(document.lastModified);
-  lastModifiedElement.textContent = lastModified.toDateString();
+
+// Function to fetch and display weather data
+function displayWeatherData(data) {
+  const weatherDescription = data.weather[0].description;
+  const temperatureKelvin = data.main.temp;
+  const temperatureCelsius = (temperatureKelvin - 273.15).toFixed(2); // Convert Kelvin to Celsius
+
+  // Display the weather information in your HTML
+  document.querySelector('.weather-card h2').textContent = 'Weather Forecast';
+  document.querySelector('.weather-card p:first-of-type').textContent = `Today's Weather: ${weatherDescription}`;
+  document.querySelector('.weather-card p:last-of-type').textContent = `Temperature: ${temperatureCelsius}°C`;
 }
 
-// Function to display a welcome message or last visit message
-function displayWelcomeMessage() {
-  if (!localStorage.getItem("lastVisit")) {
-    document.getElementById("message").textContent = "Welcome to the Lilongwe Chamber of Commerce's discovery portal! 🏛️ Explore the vibrant business community of Lilongwe, uncover economic opportunities, and stay updated on the latest events and initiatives. If you have any inquiries or require assistance, don't hesitate to contact our dedicated team. Let's together foster business growth and prosperity in Lilongwe!";
-  } else {
-    const lastVisit = parseInt(localStorage.getItem("lastVisit"));
-    const currentDate = Date.now();
-    const timeDifference = Math.floor((currentDate - lastVisit) / (1000 * 60 * 60 * 24));
+// Call the function to fetch and display weather data
+fetchWeatherData(city, apiKey)
+  .then(data => displayWeatherData(data));
 
-    if (timeDifference === 1) {
+  // Function to fetch and display the 3-day forecast
+function display3DayForecast() {
+  fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`)
+    .then(response => response.json())
+    .then(data => {
+      const forecastData = data.list; // This contains the forecast for several time intervals
+
+      // Extract the temperature data for the next 3 days
+      const threeDayForecast = forecastData.slice(0, 8 * 3); // Assuming 8 data points per day
+
+      // Display the 3-day forecast in your HTML
+      for (let i = 0; i < 3; i++) {
+        const temp = (threeDayForecast[i * 8].main.temp - 273.15).toFixed(2); // Convert Kelvin to Celsius
+        document.getElementById(`day${i + 1}Temp`).textContent = `${temp}°C`;
+      }
+    });
+}
+
+// Call the function to fetch and display the 3-day forecast
+display3DayForecast();
+
+
+
+
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
+
+// Check if this is the user's first visit
+if (!localStorage.getItem("lastVisit")) {
+  document.getElementById("message").textContent = "Welcome to the Lilongwe Chamber of Commerce's discovery portal! 🏛️ Explore the vibrant business community of Lilongwe, uncover economic opportunities, and stay updated on the latest events and initiatives. If you have any inquiries or require assistance, don't hesitate to contact our dedicated team. Let's together foster business growth and prosperity in Lilongwe!";
+} else {
+  // Get the last visit date from localStorage
+  const lastVisit = parseInt(localStorage.getItem("lastVisit"));
+
+  // Get the current date in milliseconds
+  const currentDate = Date.now();
+
+  // Calculate the difference in days
+  const timeDifference = Math.floor((currentDate - lastVisit) / (1000 * 60 * 60 * 24));
+
+  if (timeDifference === 1) {
       document.getElementById("message").textContent = "You last visited 1 day ago.";
-    } else if (timeDifference < 1) {
+  } else if (timeDifference < 1) {
       document.getElementById("message").textContent = "Back so soon! Awesome!";
-    } else {
+  } else {
       document.getElementById("message").textContent = "You last visited " + timeDifference + " days ago.";
-    }
   }
 }
+
+// Store the current date in localStorage
+localStorage.setItem("lastVisit", Date.now().toString());
+// Function to get the current date in the format "DD Month YYYY"
+function getCurrentDate() {
+  var options = { year: 'numeric', month: 'long', day: 'numeric' };
+  return new Date().toLocaleDateString(undefined, options);
+}
+
+// Find the span element with the id "lastModified" within the footer
+var lastModifiedSpan = document.getElementById("lastModified");
+
+// Update the content of the span element with the current date
+lastModifiedSpan.textContent = getCurrentDate();
+
 
 // Function to fetch and display member data
 function displayMembers(gridView) {
@@ -46,6 +106,7 @@ function displayMembers(gridView) {
         const memberCard = document.createElement('div');
         memberCard.className = gridView ? 'member-card grid' : 'member-card list';
 
+        // Populate memberCard with data from JSON
         memberCard.innerHTML = `
           <img src="images/${member.image}" alt="${member.name}">
           <h2>${member.name}</h2>
@@ -64,30 +125,6 @@ function displayMembers(gridView) {
     });
 }
 
-// Call the function to fetch and display weather data
-fetchWeatherData(city, apiKey)
-  .then(data => displayWeatherData(data));
-
-// Call the function to display the last modified date
-displayLastModifiedDate();
-
-// Call the function to display the welcome message or last visit message
-displayWelcomeMessage();
-
-// Call the function with grid view as the default
+// Call the function with grid view as default
 displayMembers(true);
-        // JavaScript code for showing the banner on specific days
-        const banner = document.querySelector('.meet-and-greet-banner');
-        const closeBannerButton = document.getElementById('closeBanner');
-        const now = new Date();
-        const dayOfWeek = now.getDay();
 
-        if (dayOfWeek >= 1 && dayOfWeek <= 3) {
-            // It's Monday, Tuesday, or Wednesday, so show the banner
-            banner.style.display = 'block';
-
-            // Add an event listener to the close button
-            closeBannerButton.addEventListener('click', function () {
-                banner.style.display = 'none';
-            });
-        }

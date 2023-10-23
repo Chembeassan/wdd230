@@ -158,7 +158,7 @@ footer {
 }
 
 /* Weather Card */
-.weather-card {
+.weather-card, .forecast {
   background-color: #FF6B35; /* Burnt orange background for weather card */
   color: #fff;
   text-align: center;
@@ -166,7 +166,7 @@ footer {
   margin-top: 20px; /* Add spacing above weather card */
 }
 
-.weather-card h2 {
+.weather-card, .forecast h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -518,6 +518,7 @@ nav {
 .main-content {
   flex: 2; /* Adjust flex properties as needed */
 }
+
 
 
 
