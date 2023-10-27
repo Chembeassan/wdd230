@@ -28,3 +28,20 @@
 		margin: 1rem auto;
 	}
 }
+/* Styles for Grid View */
+.grid-view .member-card {
+	/* Add styles for individual member cards in grid view */
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	display: inline-block;
+	width: 30%; /* Adjust the width based on your design */
+	box-sizing: border-box;
+}
+
+.grid-view .member-card h2 {
+	/* Add styles for member names in grid view */
+	font-size: 16px;
+}
+

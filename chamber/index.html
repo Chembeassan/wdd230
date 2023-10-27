@@ -61,9 +61,18 @@
         </section>
         <section class="weather-card">
             <h2>Weather Forecast</h2>
-            <p>Today's Weather: ${description}</p>
-            <p>Temperature: ${currentTemp}°C</p>
+            <p>Today's Weather: <span id="description"></span></p>
+            <p>Temperature: <span id="currentTemp"></span>°C</p>
+            <section class="forecast">
+                <h2>3-Day Forecast</h2>
+                <ul id="forecastList">
+                    <li><span class="day">Day 1:</span> <span class="temp" id="day1Temp"></span></li>
+                    <li><span class="day">Day 2:</span> <span class="temp" id="day2Temp"></span></li>
+                    <li><span class="day">Day 3:</span> <span class="temp" id="day3Temp"></span></li>
+                </ul>
+            </section>
         </section>
+        
         <section class="company-spotlights">
             <h2>Company Spotlights</h2>
             <div class="spotlight">
@@ -84,6 +93,7 @@
             </div>
         </section>
         <section class="meet-and-greet-banner">
+           
             <h2>Meet and Greet Event</h2>
             <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
             <button id="closeBanner">Close</button>

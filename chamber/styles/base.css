@@ -4,11 +4,24 @@ body, h1, h2, h3, p {
   padding: 0;
   box-sizing: border-box;
 }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	margin: 0 auto;
+	padding: 0.5rem;
+	max-width: 700px;
+	background-color:skyblue;
+	font-family: 'nunito', sans-serif;
+}
 
 body {
   font-family: 'nunito', sans-serif;
   background: linear-gradient(135deg, #007BFF, #FF6B35, #4CAF50);
-  color: #fff;
+  color: black;
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -73,11 +86,7 @@ nav a:hover {
   color: #4CAF50; /* Color on hover */
 }
 
-main {
-  max-width: 800px;
-  padding: 20px;
-  width: 100%;
-}
+
 
 .card {
   background-color: #fff;
@@ -239,6 +248,111 @@ nav {
   max-width: 700px;
   margin: 1rem auto;
 }
+
+/* Styles for List View */
+.list-view .member-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.list-view .member-card:hover {
+  transform: scale(1.05);
+}
+
+.list-view .member-card h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Styles for Grid View */
+.grid-view .member-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  width: 30%; /* Adjust the width based on your design */
+}
+
+.grid-view .member-card:hover {
+  transform: scale(1.05);
+}
+
+.grid-view .member-card h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Styles for List View */
+.list-view #members-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.list-view .member-card {
+  width: calc(50% - 20px); /* Adjust width based on desired number of members per row */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.list-view .member-card:hover {
+  transform: scale(1.05);
+}
+
+.list-view .member-card h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Styles for Grid View */
+.grid-view #members-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.grid-view .member-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  width: 30%; /* Adjust the width based on your design */
+}
+
+.grid-view .member-card:hover {
+  transform: scale(1.05);
+}
+
+.grid-view .member-card h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
 
 /* small view navigation */
 #menu {
@@ -519,7 +633,136 @@ nav {
   flex: 2; /* Adjust flex properties as needed */
 }
 
+.view-toggle {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+}
 
+.view-toggle button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+/* Styles for Grid View */
+.grid-view #members-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.grid-view .member-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  width: 30%; /* Adjust the width based on your design */
+  transition: transform 0.2s;
+}
+
+.grid-view .member-card:hover {
+  transform: scale(1.05);
+}
+
+.grid-view .member-card h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+
+.discover-menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding-left: 10px;
+	background-color: #bed;
+	text-align: center;
+}
+
+.discover-menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+
+
+.discover-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.discover-grid section {
+	text-align: center;
+}
+
+.discover-grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.discover-grid section > * {
+	margin: 0.1rem;
+}
+
+
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: 'nunito', sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
+}
+
+img {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
+}
 
 
 
@@ -530,6 +773,9 @@ nav {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+  .grid-view #members-container {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
 
   .grid-container {
