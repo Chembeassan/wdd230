@@ -1,0 +1,8 @@
+/* typography.css */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}

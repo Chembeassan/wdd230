@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Blantyre Chamber of Commerce">
+    <meta property="og:title" content="Blantrye Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/placeholder.png">
+    <meta property="og:url" content="https://Chembeassan.github.io/chamber">
+    <title>Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+    <h1>Welcome to the Blantyre Chamber of Commerce</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="hero">
+            <h2>Your Community Starts Here</h2>
+            <img src="images/hero.jpg" alt="Hero Image">
+        </section>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Whether you have questions, feedback, or need assistance, feel free to get in touch with us.</p>
+
+        <div class="contact-details">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>Our Office</h3>
+                <p><strong>Location:</strong> Chamber of Commerce, Blantyre City, Malawi</p>
+                <p><strong>Phone:</strong> +265 123 456 789</p>
+                <p><strong>Email:</strong> info@blantyrecoc.org</p>
+                <p><strong>Business Hours:</strong> Monday - Friday, 8:00 AM - 5:00 PM</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <section class="map-section">
+            <h3>Our Location</h3>
+            <div id="map-container">
+                <!-- Embed Google Map -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799147114!2d-19.020839383289213!3d-15.78200129528878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1b6b939a5a5a5a5a%3A0x1a1a1a1a1a1a1a1a!2sBlantyre%20City%2C%20Malawi!5e0!3m2!1sen!2sus!4v1634101882530!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </section>
+</main>
+
+    
+    <footer>
+        <p>Contact us at info@chamber.com</p>
+        <p>Phone : 00265 999 000 111</p>
+        <p>Created by Assan Chembe | WDD 230 | <span id="lastModified"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+
+         
+</body>
+</html>

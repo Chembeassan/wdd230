@@ -1,0 +1,112 @@
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    /* General Layout */
+    .container {
+        width: 80%;
+    }
+
+    /* Navigation */
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 2rem;
+        text-align: left;
+    }
+
+    .hero img {
+        max-width: 50%; /* Reduce size for balance */
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    /* Call-to-Action Section */
+    .cta {
+        margin: 3rem auto;
+    }
+
+    .cta a {
+        font-size: 1.2rem;
+        padding: 1.2rem 2.5rem;
+    }
+
+    /* Events Section */
+    .events {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .events h2 {
+        font-size: 2rem;
+    }
+
+    /* Weather Section */
+    .weather {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .weather h2 {
+        font-size: 2rem;
+    }
+
+    .weather img {
+        max-width: 40%; /* Adjust size of weather visuals */
+    }
+
+    /* Spotlights Section */
+    .spotlights {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three-column layout */
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .spotlights h2 {
+        font-size: 2rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 1rem;
+    }
+}
+
+/* Media Query for Extra Large Screens */
+@media (min-width: 1200px) {
+    .container {
+        width: 70%;
+    }
+
+    .hero h2 {
+        font-size: 3.5rem;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .cta a {
+        font-size: 1.4rem;
+    }
+}
+

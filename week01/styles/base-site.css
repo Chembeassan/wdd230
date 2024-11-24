@@ -1,0 +1,161 @@
+/* Body Styling */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #006400; /* Dark Green for headings */
+    margin-bottom: 15px;
+}
+
+header h1 {
+    color: #FFD700; /* Gold color for visibility */
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #006400; /* Dark Green */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+}
+
+/* Profile Picture Styles */
+header img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align items to the right */
+    background-color: #333; /* Background color for nav */
+    padding: 10px; /* Padding around nav */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display list items in a row */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between menu items */
+}
+
+nav ul li a {
+    color: #ffffff; /* Text color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Gold on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Section Styles for Typography and Wireframe */
+section {
+    background-color: #ffffff; /* White background for sections */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space below each section */
+}
+
+/* Typography Section Specific Styles */
+#typography h2, 
+#wireframe h2 {
+    color: #006400; /* Dark Green for section headings */
+}
+
+#typography ul,
+#wireframe ul {
+    list-style-type: disc; /* Bulleted list style for unordered lists */
+    padding-left: 20px; /* Indent list items */
+}
+
+/* Button Styles for Wireframe Link */
+.wireframe-link {
+    display: inline-block; /* Make it behave like a button */
+    background-color: #007BFF; /* Button background color (Bootstrap primary) */
+    color: white; /* Text color for button */
+    padding: 10px 20px; /* Padding around text in button */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners for button style */
+    font-weight: bold; /* Bold text in button */
+    transition: background-color 0.3s ease; /* Smooth transition effect on hover */
+}
+
+.wireframe-link:hover {
+    background-color: #0056b3; /* Darker blue on hover effect */
+}
+
+/* Card Styles (if applicable) */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0; /* Remove top margin for card headings */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #006400; /* Dark Green footer background */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content:center ;
+}
+
+footer p {
+   margin-bottom :5px ; 
+}
+
+/* Media Queries for Larger Screens (min-width)*/
+@media (min-width: 768px) {
+   nav {
+       flex-direction : row ; 
+       justify-content : center ; 
+   }
+
+   nav a {
+       margin : 0 1rem ; 
+   }
+
+   main {
+       max-width :800px ; 
+       margin : auto ; 
+   }
+
+   .card-container {
+       display : grid ; 
+       grid-template-columns : repeat(2,1fr); 
+       gap :1rem ; 
+   }
+
+   footer {
+       padding :1.5rem ; 
+   }
+}

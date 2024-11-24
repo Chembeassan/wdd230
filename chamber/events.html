@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Blantyre Chamber of Commerce">
+    <meta property="og:title" content="Blantrye Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/placeholder.png">
+    <meta property="og:url" content="https://Chembeassan.github.io/chamber">
+    <title>Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+    <h1>Welcome to the Blantyre Chamber of Commerce</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="hero">
+            <h2>Your Community Starts Here</h2>
+            <img src="images/hero.jpg" alt="Hero Image">
+        </section>
+
+        <section class="events">
+            <h2>Upcoming Events in Blantyre</h2>
+            <p>Join us for exciting events hosted by the Chamber of Commerce. Mark your calendars!</p>
+
+        <!-- Event Card Container -->
+        <div class="event-cards">
+            <!-- Event Card 1 -->
+            <div class="event-card">
+                <img src="images/event1.jpg" alt="Business Networking Mixer">
+                <div class="event-info">
+                    <h3>Business Networking Mixer</h3>
+                    <p class="date">January 15, 2024</p>
+                    <p class="location">Protea Hotel Ryalls, Blantyre</p>
+                    <p class="description">An opportunity to meet with business leaders, share ideas, and create partnerships. Don’t miss out on this networking opportunity!</p>
+                    <a href="event1-details.html" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="event-card">
+                <img src="images/event2.jpg" alt="Annual Chamber Gala">
+                <div class="event-info">
+                    <h3>Annual Chamber Gala</h3>
+                    <p class="date">February 22, 2024</p>
+                    <p class="location">Mount Soche Hotel, Blantyre</p>
+                    <p class="description">Celebrate the year’s achievements with a night of entertainment, dining, and networking. RSVP today!</p>
+                    <a href="event2-details.html" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="event-card">
+                <img src="images/event3.jpg" alt="Small Business Workshop">
+                <div class="event-info">
+                    <h3>Small Business Workshop</h3>
+                    <p class="date">March 5, 2024</p>
+                    <p class="location">Blantyre Cultural Centre</p>
+                    <p class="description">A hands-on workshop focused on scaling your small business, understanding local market dynamics, and navigating business regulations.</p>
+                    <a href="event3-details.html" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <!-- More Event Cards as needed -->
+
+        </div> <!-- End of event-cards -->
+
+        <!-- Event Calendar (Optional) -->
+        <div class="event-calendar">
+            <h3>Event Calendar</h3>
+            <p>See all upcoming events at a glance.</p>
+            <div class="calendar-container">
+                <div class="calendar">
+                    <!-- Example calendar month with clickable dates -->
+                    <div class="month">
+                        <span class="prev">&lt;</span>
+                        <span class="month-name">January 2024</span>
+                        <span class="next">&gt;</span>
+                    </div>
+                    <div class="days-of-week">
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                        <span>Sun</span>
+                    </div>
+                    <div class="days">
+                        <span class="day">1</span>
+                        <span class="day">2</span>
+                        <span class="day highlighted">3</span>
+                        <span class="day">4</span>
+                        <span class="day">5</span>
+                        <!-- Add more days with events marked -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+    <footer>
+        <p>Contact us at info@chamber.com</p>
+        <p>Phone : 00265 999 000 111</p>
+        <p>Created by Assan Chembe | WDD 230 | <span id="lastModified"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+
+         
+</body>
+</html>

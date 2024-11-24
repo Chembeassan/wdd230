@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+    /* Flex Navigation */
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 0 1rem;
+    }
+
+    /* Center and Limit Width of Main Content */
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* Grid Layout for Cards */
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem;
+    }
+}

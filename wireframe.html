@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            border: 2px dashed #006400;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #006400;
+            color: white;
+            padding: 20px;
+        }
+
+        .nav {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #FFD700;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .cta-button {
+            background-color: #FFD700;
+            color: #006400;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to the Blantyre Chamber of Commerce</h1>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">Contact</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="section hero">
+            <h2>Your Community Starts Here</h2>
+            <img src="placeholder.png" alt="Hero Image">
+        </div>
+        <div class="section cta">
+            <h2>Join the Chamber</h2>
+            <p>Become a member of the Blantyre Chamber of Commerce...</p>
+            <a href="#" class="cta-button">Join Now</a>
+        </div>
+        <div class="section events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>
+                    <h3>Keep Blantyre Clean and Green Campaign Launch</h3>
+                    <p>Date: February 1, 2024</p>
+                    <p>Details about the campaign...</p>
+                </li>
+                <li>
+                    <h3>Voter Registration Awareness Campaign</h3>
+                    <p>Date: November 15, 2024</p>
+                    <p>Details about the campaign...</p>
+                </li>
+            </ul>
+        </div>
+        <div class="section weather">
+            <h2>Weather</h2>
+            <p>Placeholder for weather section</p>
+        </div>
+        <div class="section spotlights">
+            <h2>Featured Businesses</h2>
+            <p>Placeholder for company spotlights</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact us at info@chamber.com</p>
+        <p>Phone: 00265 999 000 111</p>
+        <p>Created by Assan Chembe | WDD 230</p>
+    </footer>
+</body>
+</html>
