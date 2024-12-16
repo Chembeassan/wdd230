@@ -18,19 +18,18 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="week01/chamber-site-plan.html">chamber-site-plan</a>
-        <a href="chamber.html">Chamber</a>
-        <a href="site.html">Site Plan</a>
+        <a href="chamber/index.html">Chamber</a>
         <a href="form.html">Form</a>
     </nav>
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
+        <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li><a href="#">Activity 1</a></li>
-                <li><a href="#">Activity 2</a></li>
-            </ul>
+         <div id="learning-activities">
+            <h3>Learning Activities</h3>
+        
+         </div>
         </section>
+
         <section class="card">
             <h2>Information</h2>
             <p><strong>Weather:</strong> I recently visited Lilongwe, Malawi, where the weather was pleasant with some cold temperatures. I also visited Maputo, Mozambique, Capetown, South Africa, and Lusaka, Zambia, and each place had its own unique climate.</p>
@@ -44,7 +43,10 @@
     <p>&copy; <span id="year"></span> Assan Chembe - Blantyre, Malawi</p>
     <p id="lastModified"></p>
 </footer>
-<script src="scripts/getDates.js"></script>
+<script src="scripts/getDates.js" defer></script>
+<script src="scripts/weather.js" defer></script>
+<script src="scripts/links.js" defer></script>
+
 
 </body>
 </html>

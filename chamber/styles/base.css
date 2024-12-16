@@ -7,140 +7,70 @@
     box-sizing: border-box;
 }
 
-/* Body and Typography */
+/* Global Typography */
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #ECF0F1; /* Light gray */
-    color: #34495E; /* Darker text color */
+    background-color: #ECF0F1;
+    color: #34495E;
     line-height: 1.6;
-    margin: 0;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
-    color: #2C3E50; /* Primary dark blue color */
 }
 
-/* Container */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
+h2, h3 {
+    color: #006400; /* LUANAR Green */
 }
+
+h4 {
+    color: #333;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    color: #555;
+}
+
 /* Header Styles */
 header {
-    background-color: #2C3E50; /* Dark blue background */
-    color: #ECF0F1; /* Light text color for the entire header */
+    background-color: #2C3E50;
+    color: #ECF0F1;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap;
 }
 
 header h1 {
-    font-size: 1.5rem; /* Adjust size if needed */
-    color: #ECF0F1; /* Ensure this color is light for visibility */
-    margin: 0; /* Reset margin for better spacing */
-}
-/* Call to Action Styles */
-.cta {
-    background-color: #006400; /* Dark Green */
-    color: #ffffff; /* White text */
-    padding: 20px;
-    text-align: center; /* Center align text */
-    margin: 20px 0; /* Margin above and below */
-}
-
-.cta h2 {
-    margin-bottom: 10px; /* Space below heading */
-}
-
-.cta p {
-    margin-bottom: 15px; /* Space below paragraph */
-}
-
-.cta-button {
-    background-color: #FFD700; /* Gold color */
-    color: #333; /* Dark text for contrast */
-    padding: 10px 20px;
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-}
-
-.cta-button:hover {
-    background-color: #f0c040; /* Slightly darker gold on hover */
-}
-
-/* Upcoming Events Styles */
-.events {
-    padding: 20px;
-    background-color: #f4f4f4; /* Light gray background */
-}
-
-.events h2 {
-    margin-bottom: 15px; /* Space below heading */
-}
-
-.events ul {
-    list-style-type: none; /* Remove bullet points */
-    padding-left: 0; /* Remove default padding */
-}
-
-.events li {
-    margin-bottom: 20px; /* Space between events */
-    border-bottom: 1px solid #ccc; /* Divider line between events */
-    padding-bottom: 10px; /* Padding below each event */
-}
-
-.events h3 {
-    margin-bottom: 5px; /* Space below event title */
-}
-/* Navigation Styles */
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+    font-size: 1.5rem;
     margin: 0;
-    padding: 0;
 }
 
-header nav ul li a {
-    text-decoration: none;
-    color: #ECF0F1; /* Matches the header text color */
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #E67E22; /* Accent color for hover */
-}
-
-/* Navigation */
-nav {
+/* Navigation Styles */
+nav, header nav ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    background-color: #1ABC9C; /* Teal */
+    background-color: #1ABC9C;
     padding: 1rem;
 }
 
-nav a {
+nav a, header nav ul li a {
     color: #ECF0F1;
     padding: 0.5rem 1rem;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #E67E22; /* Accent color */
+nav a:hover, header nav ul li a:hover {
+    color: #E67E22;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to bottom, #1ABC9C, #16A085); /* Gradient */
+    background: linear-gradient(to bottom, #1ABC9C, #16A085);
     color: #ECF0F1;
     text-align: center;
     padding: 3rem 1rem;
@@ -151,68 +81,157 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
-.hero img {
-    max-width: 100%;
+/* CTA Section */
+.cta, .cta-button {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: whitesmoke;
     border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
-/* Call-to-Action Section */
-.cta {
-    text-align: center;
-    margin: 2rem 0;
+.cta-button {
+    background-color: #FFD700;
+    color: #006400;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
-.cta a {
-    background-color: #E67E22;
-    color: #fff;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+.cta-button:hover {
+    background-color: #FFA500;
 }
 
-.cta a:hover {
-    background-color: #D35400; /* Darker orange */
-}
-
-/* Events Section */
-.events {
-    background-color: #FFF;
-    padding: 2rem 1rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.events h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-/* Weather Section */
-.weather {
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.weather h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-/* Spotlights Section */
-.spotlights {
+/* Event & Spotlight Section */
+.events, .spotlights {
     background-color: #f9f9f9;
-    padding: 2rem 1rem;
-    margin: 1rem 0;
-    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
 }
 
-.spotlights h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+.events h2, .spotlights h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
+
+/* Event Cards */
+.event-cards, .team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* General Section Styling */
+section {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #006400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-cards, .event-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Base styles for navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #006400; /* LUANAR Green */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Hide the navigation links and show hamburger in mobile view */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger-menu .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+}
+
+/* Media query for mobile view */
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: flex; /* Show hamburger button in mobile view */
+    }
+
+    .nav-links {
+        display: none; /* Hide menu items on mobile */
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #006400; /* Same as navbar */
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show menu items when toggled */
+    }
+}
+.grid section {
+  display: inline-block;
+  width: calc(33% - 20px);
+  margin: 10px;
+}
+
+.list section {
+  display: block;
+  margin-bottom: 15px;
+}
+
 /* General Section Styling */
 .events {
     padding: 20px;
@@ -315,6 +334,162 @@ nav a:hover {
     color: #333;
     text-align: center;
     margin-bottom: 20px;
+}
+
+/* Main container styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Form and benefits side by side */
+    gap: 20px; /* Space between form and benefits */
+}
+
+/* Form container styling */
+.form-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Benefits container styling */
+.benefits-container {
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout on mobile */
+    }
+}
+/* Search container styles */
+.search-container {
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* View toggle button styles */
+.view-toggle {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.view-toggle button {
+    background-color: #4CAF50; /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex; /* Align icon and text */
+    align-items: center; /* Center icon vertically */
+}
+
+.view-toggle button img {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.view-toggle button:hover {
+    background-color: darkgreen; /* Darker shade on hover */
+}
+
+/* Member card styles */
+.member-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.member-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Add shadow effect on hover */
+}
+
+/* Grid and list view styles */
+.grid-view {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-view .member-card {
+    width: calc(33.33% - 20px); /* Three cards per row */
+}
+
+.list-view {
+    display: block; /* Full width in list view */
+}
+
+.list-view .member-card {
+    width: auto; /* Full width in list view */
+}
+/* Main grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Sidebar width and main content */
+    gap: 20px; /* Space between sidebar and main content */
+}
+#meet-greet-banner {
+    background-color: #ffeb3b; /* Light yellow background */
+    color: #333; /* Dark text color */
+    padding: 15px;
+    text-align: center;
+    position: relative; /* Positioning for close button */
+}
+
+#close-banner {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px; /* Position close button on the right */
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Main content styling */
+.main-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap */
+}
+
+/* Image styling */
+.main-content img {
+    width: calc(33.33% - 10px); /* Three images per row with spacing */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Hover effect transition */
+}
+
+/* Hover effect for desktop view */
+@media (min-width: 769px) {
+    .main-content img:hover {
+        transform: scale(1.05); /* Scale image on hover */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout on mobile */
+    }
+
+    .main-content img {
+        width: 100%; /* Full width on mobile */
+    }
 }
 
 .calendar-container {
@@ -451,6 +626,58 @@ h4 {
         flex-direction: column;
         align-items: center;
     }
+}
+.spotlights {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Space below the section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.spotlight-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+.member-card {
+    background-color: #ffffff; /* White background for each card */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px; /* Space between cards */
+    flex-basis: calc(30% - 10px); /* Responsive card width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for card depth */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.member-card:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.member-card h4 {
+    margin-top: 0; /* Remove top margin */
+}
+
+.member-card img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.member-card p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.member-card a {
+    display: inline-block; /* Make link a block element for better click area */
+    margin-top: 10px; /* Space above link */
+    color: #007BFF; /* Bootstrap primary color */
+    text-decoration: none; /* Remove underline */
+}
+
+.member-card a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
 }
 
 /* General Page Styling */

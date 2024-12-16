@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Blantyre Tech Solutions",
+        "address": "123 Tech Lane, Blantyre",
+        "phone": "00265 999 111 222",
+        "website": "https://blantyretech.com",
+        "image": "images/tech_solutions.png",
+        "membershipLevel": "Gold",
+        "description": "Leading provider of tech solutions in Malawi."
+    },
+    {
+        "name": "Green Gardens Ltd.",
+        "address": "456 Green St, Blantyre",
+        "phone": "00265 888 333 444",
+        "website": "https://greengardens.com",
+        "image": "images/green_gardens.png",
+        "membershipLevel": "Silver",
+        "description": "Specializing in sustainable gardening solutions."
+    },
+    {
+        "name": "Malawi Coffee Co.",
+        "address": "789 Coffee Rd, Blantyre",
+        "phone": "00265 777 555 666",
+        "website": "https://malawicoffee.com",
+        "image": "images/malawi_coffee.png",
+        "membershipLevel": "Bronze",
+        "description": "Premium coffee sourced from local farmers."
+    },
+    {
+        "name": "Blantyre Construction Inc.",
+        "address": "101 Build Ave, Blantyre",
+        "phone": "00265 666 777 888",
+        "website": "https://blantyreconstruction.com",
+        "image": "images/construction_inc.png",
+        "membershipLevel": "Gold",
+        "description": "Expert builders and contractors in Malawi."
+    },
+    {
+        "name": "Health First Pharmacy",
+        "address": "202 Health St, Blantyre",
+        "phone": "00265 555 444 333",
+        "website": "",
+        "image": "",
+        "membershipLevel": "",
+        "description": ""
+    },
+    {
+        "name": "Blantyre Art Gallery",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "image": "",
+        "membershipLevel": "",
+        "description": ""
+    }
+]

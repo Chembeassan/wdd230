@@ -1,0 +1,58 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {"url": "week01/file-folder-naming.html", "title": "File and Folder Naming Conventions"},
+                {"url": "week01/web-dev-standards.html", "title": "Course Web Development Standards"},
+                {"url": "week01/page-layout-review.html", "title": "Page Layout Review"},
+                {"url": "week01/applied-javascript.html", "title": "Applied JavaScript"},
+                {"url": "week01/responsive-design.html", "title": "Responsive Design: CSS Media Queries"},
+                {"url": "week01/team-activity.html", "title": "Team Activity: Course Home Page Build"}
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {"url": "week02/design-principles.html", "title": "Design Principles"},
+                {"url": "week02/favicon.html", "title": "Favicon Creation"},
+                {"url": "week02/social-media-meta.html", "title": "Social Media Meta Tags"},
+                {"url": "week02/hamburger-menu.html", "title": "Responsive Hamburger Menu"},
+                {"url": "week02/dom-manipulation.html", "title": "DOM Manipulation Techniques"},
+                {"url": "week02/css-specificity.html", "title": "CSS Specificity"},
+                {"url": "week02/css-normalize-reset.html", "title": "CSS Normalize and Reset"},
+                {"url": "week02/team-activity.html", "title": "Team Activity: Course Home Page Enhancement"}
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {"url": "week03/webp-image-format.html", "title": "WebP Image File Format"},
+                {"url": "week03/native-lazy-loading.html", "title": "Native Lazy Loading"},
+                {"url": "week03/responsive-images-srcset.html", "title": "Responsive Images - Srcset"},
+                {"url": "week03/web-storage-api.html", "title": "Web Storage API - localStorage"},
+                {"url": "week03/team-activity.html", "title": "Team Activity: Course Home Page Responsive Images"}
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {"url": "week04/css-pseudo-classes.html", "title": "CSS Pseudo-classes"},
+                {"url": "week04/css-combinators.html", "title": "CSS Combinators"},
+                {"url": "week04/html-tables.html", "title": "HTML Tables for Data Presentation"},
+                {"url": "week04/html-forms.html", "title": "HTML Forms"},
+                {"url": "week04/team-activity.html", "title": "Team Activity: Form Build"}
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {"url": "week05/pseudo-elements.html", "title": "Pseudo-elements"},
+                {"url": "week05/json-data.html", "title":"Working with JSON Data"},
+                {"url":"week05/fetch-api.html","title":"The Fetch API"},
+                {"url":"week05/weather-api.html","title":"Consuming a Third-party Weather API"},
+                {"url":"week05/team-activity.html","title":"Team Activity: Course Home Page Weather"}
+            ]
+        }
+    ]
+}

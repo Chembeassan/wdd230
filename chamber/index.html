@@ -17,66 +17,106 @@
 </head>
 <body>
     <header>
-    <h1>Welcome to the Blantyre Chamber of Commerce</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+        <h1>Welcome to the Blantyre Chamber of Commerce</h1>
+        <nav class="navbar">
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div id="meet-greet-banner" style="display:none;">
+    <p>Join us for our Chamber of Commerce Meet and Greet on Wednesday at 7:00 PM!</p>
+    <button id="close-banner">❌</button>
+    </div>
 
     <main>
-        <section class="hero">
+        <div>
+            <section class="hero">
             <h2>Your Community Starts Here</h2>
-            <img src="images/nbs.png" alt="Hero Image">
+            <img src="images/welcome.png" alt="Hero Image">
+            </section>
+        </div>
+        <div>
+            <section class="cta">
+                <h2>Join the Chamber</h2>
+                <p>Become a member of the Blantyre Chamber of Commerce to enjoy various benefits, including networking opportunities, access to resources, and support for your business growth. By joining, you contribute to initiatives like the "Keep Blantyre Clean and Green" campaign, which aims to make our city one of the greenest and cleanest in Malawi.</p>
+                <a href="join.html" class="cta-button">Join Now</a>
+            </section>   
+        </div>
+        
+
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>
+                    <h3>Keep Blantyre Clean and Green Campaign Launch</h3>
+                    <p>Date: February 1, 2024</p>
+                    <p>Join us for the annual launch of the Keep Blantyre Clean and Green initiative. Participate in tree planting and community cleanup activities.</p>
+                </li>
+                <li>
+                    <h3>Voter Registration Awareness Campaign</h3>
+                    <p>Date: November 15, 2024</p>
+                    <p>Engage in an awareness campaign led by Dr. Kondwani Nankhumwa to promote voter registration among residents.</p>
+                </li>
+                <li>
+                    <h3>Cholera Prevention Workshop</h3>
+                    <p>Date: December 5, 2024</p>
+                    <p>A workshop organized by the Blantyre District Council focusing on cholera prevention strategies in the community.</p>
+                </li>
+            </ul>
+            
         </section>
-        <section class="cta"></section>
-    <h2>Join the Chamber</h2>
-    <p>Become a member of the Blantyre Chamber of Commerce to enjoy various benefits, including networking opportunities, access to resources, and support for your business growth. By joining, you contribute to initiatives like the "Keep Blantyre Clean and Green" campaign, which aims to make our city one of the greenest and cleanest in Malawi.</p>
-    <a href="join.html" class="cta-button">Join Now</a>
+         <!-- Weather Information Card -->
+          <section class="weather-card">
+    <h3>Current Weather</h3>
+    <div class="current-weather">
+        <img id="weather-icon" src="" alt="Weather Icon" class="weather-icon">
+        <div class="weather-details">
+            <p id="temperature">Temperature: -- °C</p>
+            <p id="weather-description">Condition: --</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="wind-speed">Wind Speed: -- m/s</p>
+            <p id="last-updated">Last Updated: --</p>
+        </div>
+    </div>
 </section>
 
-<section class="events">
-    <h2>Upcoming Events</h2>
-    <ul>
-        <li>
-            <h3>Keep Blantyre Clean and Green Campaign Launch</h3>
-            <p>Date: February 1, 2024</p>
-            <p>Join us for the annual launch of the Keep Blantyre Clean and Green initiative. Participate in tree planting and community cleanup activities.</p>
-        </li>
-        <li>
-            <h3>Voter Registration Awareness Campaign</h3>
-            <p>Date: November 15, 2024</p>
-            <p>Engage in an awareness campaign led by Dr. Kondwani Nankhumwa to promote voter registration among residents.</p>
-        </li>
-        <li>
-            <h3>Cholera Prevention Workshop</h3>
-            <p>Date: December 5, 2024</p>
-            <p>A workshop organized by the Blantyre District Council focusing on cholera prevention strategies in the community.</p>
-        </li>
-    </ul>
+<section class="forecast">
+    <h3>3-Day Forecast</h3>
+    <div id="forecast-container" class="forecast-container"></div> <!-- Forecast data will be inserted here -->
 </section>
-        <section class="weather">
-            <h2>Weather</h2>
-            <p>Placeholder for weather.</p>
-        </section>
+
         <section class="spotlights">
-            <h2>Featured Businesses</h2>
-            <p>Placeholder for company spotlights.</p>
-        </section>
+    <h2>Featured Businesses</h2>
+    <p>Discover our spotlight members who are committed to excellence in our community. Check out their services and support local businesses!</p>
+    <div id="spotlight-members" class="spotlight-container">
+        
+    </div>
+</section>
+
     </main>
     <footer>
         <p>Contact us at info@chamber.com</p>
         <p>Phone : 00265 999 000 111</p>
-        <p>Created by Assan Chembe | WDD 230 | <span id="lastModified"></span></p>
+        <p>Created by Assan Chembe | WDD 230 | <span id="lastModifiedFooter"></span></p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="/scripts/links.js"></script>
 
          
 </body>
 </html>
-

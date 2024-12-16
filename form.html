@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development by [Your Name] - course assignment portal">
+    <meta name="author" content="Assan Chembe">
+    <title>Asssan Chembe - WDD 230 - Web Frontend Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+</head>
+<body>
+    <header>
+        <img src="images/assan.png" alt="Profile picture">
+        <span>Assan Chembe</span>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="week01/chamber-site-plan.html">chamber-site-plan</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="site.html">Site Plan</a>
+        <a href="form.html">Form</a>
+    </nav>
+    <main>
+        <h2>User Registration Form</h2>
+        <form action="record.html" method="get" id="registration-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}" title="Must be at least 8 characters long and only alphanumeric.">
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address from byui.edu">
+
+            <label for="page-rating">Page Rating (1-10):</label>
+            <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1">
+            <span id="rating-value">5</span> <!-- Default value display -->
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+    <p>&copy; <span id="year"></span> Assan Chembe - Blantyre, Malawi</p>
+    <p id="lastModified"></p>
+</footer>
+<script src="scripts/getDates.js"></script>
+
+</body>
+</html>
