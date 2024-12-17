@@ -19,6 +19,37 @@ h1, h2 {
     font-family: 'Poppins', sans-serif;
     color: #2C3E50; /* Primary dark blue color */
 }
+.nav-links {
+    display: none; /* Hide links by default */
+}
+
+.hamburger {
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Show links when toggled */
+.nav-active {
+    display: flex; /* Or block, depending on layout */
+}
+/* Add this at the end of your existing CSS file */
+body.dark-mode {
+    background-color: #34495E; /* Dark background */
+    color: #ECF0F1; /* Light text */
+}
+
+/* Optionally, adjust other elements for dark mode */
+header.dark-mode {
+    background-color: #2C3E50; /* Darker header background */
+}
+
+nav.dark-mode {
+    background-color: #1ABC9C; /* Adjust nav color if needed */
+}
+
+.card.dark-mode {
+    background-color: #2C3E50; /* Darker card background */
+    color: #ECF0F1; /* Light text for cards */
+}
 
 /* Layout Container */
 .container {
