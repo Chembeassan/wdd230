@@ -1,0 +1,64 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            border: 2px dashed #006400;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #006400;
+            color: white;
+            padding: 20px;
+        }
+
+        .nav {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #FFD700;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .cta-button {
+            background-color: #FFD700;
+            color: #006400;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
